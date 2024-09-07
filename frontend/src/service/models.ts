@@ -21,7 +21,7 @@ export interface Service {
 
 export interface ServiceRegistration {
     title: string
-    datetime: Date
+    timestamp: Date
     price: number
     userId: string
 }

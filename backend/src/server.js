@@ -4,8 +4,6 @@ const mongoose = require('mongoose')
 const Authentication = require('./authentication')
 const dto = require('./dto')
 const {User, ROLE_CUSTOMER, ROLE_ADMIN} = require('./models/User')
-const Product = require('./models/Product')
-const {Order, STATUS_NEW, STATUS_PROCESS, STATUS_COMPLETE, STATUS_ABORT} = require('./models/Order')
 const {RegisteredEvent} = require("./models/RegisteredEvent");
 const {RegisteredService} = require("./models/RegisteredService");
 

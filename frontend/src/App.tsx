@@ -40,9 +40,11 @@ const App = () => {
     return (
         <>
             <Header setPage={setPage} setUser={setUser} isLogged={!!user} />
-            <div className="container">
-                {showPage()}
-            </div>
+            <main>
+                <div className="container">
+                    {showPage()}
+                </div>
+            </main>
             <Footer/>
         </>
     );

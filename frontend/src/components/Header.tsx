@@ -22,7 +22,7 @@ const Header = ({setPage, setUser, isLogged}: HeaderArgs) => {
         <>
             <header>
                 <div className="container">
-                    <ul>
+                    <ul className="menu">
                         <li onClick={() => setPage(Home.name)}>Главная</li>
                         <li onClick={() => setPage(Services.name)}>Услуги</li>
                         <li onClick={() => setPage(Events.name)}>Мероприятия</li>

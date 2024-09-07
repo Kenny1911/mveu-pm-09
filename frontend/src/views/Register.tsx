@@ -39,17 +39,17 @@ const Register = ({setPage}: RegisterArgs) => {
             })()}
 
             <form onSubmit={submit}>
-                <div>
+                <div className="form-group">
                     <label htmlFor="">Логин:</label>
                     <input type="text" required value={login} onChange={(e) => setLogin(e.target.value)}/>
                 </div>
 
-                <div>
+                <div className="form-group">
                     <label htmlFor="">Пароль:</label>
                     <input type="password" required value={password} onChange={(e) => setPassword(e.target.value)}/>
                 </div>
 
-                <div>
+                <div className="form-group">
                     <input type="submit" value="Войти" />
                 </div>
             </form>

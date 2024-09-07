@@ -27,7 +27,7 @@ const Service = ({user, service}: ServiceArgs) => {
     }
 
     return (
-        <div>
+        <div className="service">
             <div>{service.title}</div>
             <div>{service.price} руб.</div>
 
@@ -37,7 +37,7 @@ const Service = ({user, service}: ServiceArgs) => {
                         return <div>Вы успешно зарегистрированы</div>
                     } else {
                         return <form onSubmit={register}>
-                            <div>
+                            <div className="form-group">
                                 <input
                                     type="datetime-local"
                                     required

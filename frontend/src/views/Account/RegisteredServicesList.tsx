@@ -16,14 +16,14 @@ const RegisteredServicesList = () => {
             {(() => {
                 if (services.length > 0) {
                     return (services.map((service, index) => (
-                        <div key={index}>
-                            <div>{service.title}</div>
+                        <div key={index} className="registered-service">
+                            <div><b>{service.title}</b></div>
                             <div>{service.price} руб.</div>
-                            <div>{service.timestamp.toLocaleString()}</div>
+                            <div><i>{service.timestamp.toLocaleString()}</i></div>
                         </div>
                     )))
                 } else {
-                    return <div>Записей нет</div>
+                    return <h4>Записей нет</h4>
                 }
             })()}
         </>

@@ -16,13 +16,13 @@ const RegisteredEventsList = () => {
             {(() => {
                 if (events.length > 0) {
                     return events.map((event, index) => (
-                        <div key={index}>
-                            <div>{event.title}</div>
-                            <div>{event.timestamp.toLocaleString()}</div>
+                        <div key={index} className="registered-event">
+                            <div><b>{event.title}</b></div>
+                            <div><i>{event.timestamp.toLocaleString()}</i></div>
                         </div>
                     ))
                 } else {
-                    return <div>Записей нет</div>
+                    return <h4>Записей нет</h4>
                 }
             })()}
         </>
